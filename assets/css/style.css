@@ -1,0 +1,237 @@
+/* ========================================
+   MARAGAMO Tech Solutions
+   Main Stylesheet
+   Version 1.1
+======================================== */
+
+
+/* ========================================
+   RESET
+======================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ========================================
+   ROOT COLORS
+======================================== */
+
+:root{
+
+    --navy:#081321;
+    --navy-light:#10233d;
+
+    --gold:#d4af37;
+
+    --blue:#1d7df2;
+
+    --white:#ffffff;
+
+    --transition:.3s ease;
+
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#061220;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(8,19,33,.95);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    padding:18px 0;
+
+}
+
+
+.navbar .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.logo img{
+
+    height:60px;
+
+    width:auto;
+
+    display:block;
+
+    transition:var(--transition);
+
+}
+
+.logo img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
+/* ========================================
+   MENU
+======================================== */
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+
+.nav-links li{
+
+    list-style:none;
+
+}
+
+
+.nav-links a{
+
+    color:var(--white);
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+
+.nav-links a:hover{
+
+    color:var(--gold);
+
+}
+
+
+/* ========================================
+   CTA BUTTON
+======================================== */
+
+.btn-primary{
+
+    display:inline-block;
+
+    background:var(--gold);
+
+    color:#081321;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+}
+
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(212,175,55,.35);
+
+}
+
+
+/* ========================================
+   NAVBAR SCROLLED
+======================================== */
+
+.navbar-scrolled{
+
+    background:#081321;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+
+/* ========================================
+   HERO PLACEHOLDER
+======================================== */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}

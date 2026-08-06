@@ -1,0 +1,168 @@
+/* ========================================
+   MARAGAMO Tech Solutions
+   Responsive Stylesheet
+   Version 1.0
+======================================== */
+
+
+/* ========================================
+   Large Desktop
+======================================== */
+
+@media (max-width: 1400px) {
+
+    .container{
+        width:95%;
+    }
+
+}
+
+
+/* ========================================
+   Laptop
+======================================== */
+
+@media (max-width: 1200px) {
+
+    .nav-links{
+
+        gap:25px;
+
+    }
+
+}
+
+
+/* ========================================
+   Tablet Landscape
+======================================== */
+
+@media (max-width: 992px) {
+
+    .navbar .container{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:20px;
+
+    }
+
+    .nav-actions{
+
+        margin-top:10px;
+
+    }
+
+}
+
+
+/* ========================================
+   Tablet Portrait
+======================================== */
+
+@media (max-width:768px){
+
+    .logo{
+
+        text-align:center;
+
+    }
+
+    .logo a{
+
+        font-size:28px;
+
+    }
+
+    .logo span{
+
+        font-size:12px;
+
+    }
+
+    .nav-links{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:15px;
+
+        margin-top:20px;
+
+    }
+
+    .btn-primary{
+
+        margin-top:20px;
+
+        width:220px;
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* ========================================
+   Mobile
+======================================== */
+
+@media (max-width:576px){
+
+    body{
+
+        font-size:14px;
+
+    }
+
+    .navbar{
+
+        padding:15px 0;
+
+    }
+
+    .logo a{
+
+        font-size:24px;
+
+    }
+
+    .logo span{
+
+        letter-spacing:2px;
+
+    }
+
+    .nav-links{
+
+        gap:12px;
+
+    }
+
+    .nav-links a{
+
+        font-size:15px;
+
+    }
+
+    .btn-primary{
+
+        width:100%;
+
+        padding:14px;
+
+    }
+
+}
