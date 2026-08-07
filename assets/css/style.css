@@ -136,11 +136,11 @@ body{
 
     display:flex;
 
-    list-style:none;
+    align-items:center;
 
     gap:35px;
 
-    align-items:center;
+    list-style:none;
 
 }
 
@@ -169,7 +169,6 @@ body{
     color:var(--gold);
 
 }
-
 
 /* ========================================
    CTA BUTTON
@@ -943,13 +942,15 @@ OUR IMPACT
 
     border:none;
 
-    background:none;
+    background:transparent;
 
     cursor:pointer;
 
     position:relative;
 
     z-index:10001;
+
+    padding:0;
 
 }
 
@@ -1013,7 +1014,7 @@ OUR IMPACT
 
     transition:.35s;
 
-    z-index:9998;
+    z-index:999;
 
 }
 
@@ -1063,31 +1064,33 @@ OUR IMPACT
 
     .nav-links{
 
-        position:fixed;
+    position:fixed;
 
-        top:0;
+    top:0;
 
-        right:-320px;
+    right:-280px;
 
-        width:320px;
+    width:280px;
 
-        height:100vh;
+    height:100vh;
 
-        background:#081321;
+    background:#081321;
 
-        display:flex;
+    display:flex;
 
-        flex-direction:column;
+    flex-direction:column;
 
-        justify-content:center;
+    justify-content:flex-start;
 
-        align-items:center;
+    align-items:flex-start;
 
-        gap:30px;
+    padding:120px 40px 40px;
 
-        transition:right .35s ease;
+    gap:22px;
 
-        z-index:9999;
+    transition:right .35s ease;
+
+    z-index:9999;
 
     }
 
@@ -1100,6 +1103,26 @@ OUR IMPACT
     .mobile-button{
 
         display:block;
+
+    }
+
+    .nav-links li{
+
+    width:100%;
+
+    margin-bottom:8px;
+
+}
+
+    .nav-links a{
+
+    display:block;
+
+    width:100%;
+
+    padding:8px 0;
+
+    font-size:18px;
 
     }
 
