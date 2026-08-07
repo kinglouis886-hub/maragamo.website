@@ -219,24 +219,79 @@
 /* ========================================
    SMALL MOBILE
 ======================================== */
+@media (max-width:768px){
 
-@media (max-width:480px){
+    .navbar{
 
-    .hero h1{
-
-        font-size:34px;
+        padding:15px 0;
 
     }
 
-    .section-title{
+    .navbar .container{
 
-        font-size:34px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
 
     }
 
     .logo img{
 
-        height:48px;
+        height:42px;
+
+    }
+
+    .nav-actions{
+
+        display:none;
+
+    }
+
+    .hamburger{
+
+        display:block;
+
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:0;
+        right:-100%;
+
+        width:280px;
+        height:100vh;
+
+        background:#081321;
+
+        display:flex;
+        flex-direction:column;
+
+        justify-content:center;
+        align-items:center;
+
+        gap:30px;
+
+        transition:.35s;
+
+        z-index:999;
+
+        box-shadow:-10px 0 30px rgba(0,0,0,.3);
+
+    }
+
+    .nav-links.active{
+
+        right:0;
+
+    }
+
+    .mobile-button{
+
+        display:block;
+
+        margin-top:20px;
 
     }
 

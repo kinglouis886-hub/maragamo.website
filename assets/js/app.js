@@ -6,39 +6,53 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    console.log("🚀 MARAGAMO Tech Solutions Website Loaded");
-
-    initializeNavigation();
-
-});
-
-/* ==========================================
-   Navigation
-========================================== */
-
-function initializeNavigation() {
-
     const navbar = document.querySelector(".navbar");
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+    const overlay = document.getElementById("menuOverlay");
 
-    if (!navbar)
-        return;
-
+    // Sticky Navbar
     window.addEventListener("scroll", () => {
 
-        if (window.scrollY > 50) {
-
+        if (window.scrollY > 50)
             navbar.classList.add("navbar-scrolled");
-
-        }
-        else {
-
+        else
             navbar.classList.remove("navbar-scrolled");
-
-        }
 
     });
 
-}
+    // Mobile Menu
+    hamburger.addEventListener("click", () => {
+
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+        overlay.classList.toggle("active");
+
+        document.body.classList.toggle("menu-open");
+
+    });
+
+    // Close by Overlay
+    overlay.addEventListener("click", closeMenu);
+
+    // Close by Menu Item
+    document.querySelectorAll(".nav-links a").forEach(item => {
+
+        item.addEventListener("click", closeMenu);
+
+    });
+
+    function closeMenu(){
+
+        hamburger.classList.remove("active");
+        navLinks.classList.remove("active");
+        overlay.classList.remove("active");
+
+        document.body.classList.remove("menu-open");
+
+    }
+
+});
 
 /* ==========================================
    Future Features
