@@ -1,0 +1,131 @@
+/* ========================================
+   MARAGAMO Tech Solutions
+   CSS: footer.css
+   Version: 1.0
+======================================== */
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer{
+
+    background:var(--bg-primary);
+    padding:80px 0 30px;
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ========================================
+   FOOTER CONTAINER
+======================================== */
+
+.footer-container{
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:50px;
+    margin-bottom:50px;
+
+}
+
+/* ========================================
+   FOOTER BRAND
+======================================== */
+
+.footer-brand img{
+
+    height:42px;
+    margin-bottom:20px;
+
+}
+
+.footer-brand p{
+
+    color:var(--text-muted);
+    line-height:1.8;
+    max-width:350px;
+
+}
+
+/* ========================================
+   FOOTER LINKS
+======================================== */
+
+.footer-links h3{
+
+    color:var(--white);
+    margin-bottom:20px;
+
+}
+
+.footer-links ul{
+
+    list-style:none;
+
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:var(--text-muted);
+    text-decoration:none;
+    transition:var(--transition);
+
+}
+
+.footer-links a:hover{
+
+    color:var(--gold);
+
+}
+
+/* ========================================
+   SOCIAL LINKS
+======================================== */
+
+.footer-social{
+
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+
+}
+
+.footer-social a{
+
+    color:var(--white);
+    font-size:20px;
+    transition:var(--transition);
+
+}
+
+.footer-social a:hover{
+
+    color:var(--gold);
+
+}
+
+/* ========================================
+   COPYRIGHT
+======================================== */
+
+.footer-bottom{
+
+    text-align:center;
+    padding-top:30px;
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-bottom p{
+
+    color:var(--text-muted);
+    font-size:14px;
+
+}

@@ -1,0 +1,255 @@
+/* ========================================
+   MARAGAMO Tech Solutions
+   CSS: header.css
+   Version 1.1
+======================================== */
+
+/* ========================================
+   NAVBAR
+======================================== */
+.navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    background:rgba(8,19,33,.95);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.05);
+    padding:18px 0;
+
+}
+
+.navbar .container{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    padding:0 20px;
+
+}
+
+/* ========================================
+   LOGO
+======================================== */
+.logo img{
+
+    height:42px;
+    width:auto;
+    display:block;
+    transition:var(--transition);
+}
+
+.logo img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ========================================
+   MENU
+======================================== */
+.nav-links{
+
+    display:flex;
+    align-items:center;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-links li{
+
+    list-style:none;
+}
+
+.nav-links a{
+
+    color:var(--white);
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    transition:var(--transition);
+}
+
+.nav-links a:hover{
+    color:var(--gold);
+}
+
+/* ========================================
+   NAVBAR SCROLLED
+======================================== */
+
+.navbar-scrolled{
+
+    background:#081321;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+
+/* ========================================
+   HAMBURGER MENU
+======================================== */
+
+.hamburger{
+
+    display:none;      /* <-- hide on desktop */
+
+    align-items:center;
+    justify-content:center;
+
+    width:42px;
+    height:42px;
+
+    margin-left:auto;
+
+    border:none;
+    background:transparent;
+    cursor:pointer;
+
+    position:relative;
+    z-index:10001;
+
+    padding:0;
+
+}
+
+.hamburger span{
+
+    display:block;
+    width:28px;
+    height:3px;
+    margin:6px auto;
+    background:#fff;
+    border-radius:10px;
+    transition:.35s ease;
+}
+
+.hamburger.active span:nth-child(1){
+
+    transform:translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2){
+
+    opacity:0;
+}
+
+.hamburger.active span:nth-child(3){
+
+    transform:translateY(-9px) rotate(-45deg);
+}
+
+/* ========================================
+   DESKTOP / MOBILE
+======================================== */
+
+.mobile-button{
+
+    display:none;
+}
+
+.menu-overlay{
+
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    opacity:0;
+    visibility:hidden;
+    transition:.35s;
+    z-index:999;
+
+}
+
+.menu-overlay.active{
+
+    opacity:1;
+    visibility:visible;
+}
+
+
+@media (max-width:768px){
+
+    .navbar{
+        padding:15px 0;
+    }
+
+    .navbar .container{
+
+        width:100%;
+        max-width:100%;
+        padding:0 16px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .logo{
+    flex:1;
+    }
+
+    .logo img{
+        height:42px;
+    }
+
+    .hamburger{
+        display:block;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .nav-actions{
+        display:none;
+    }
+
+    .nav-links{
+        position:fixed;
+        top:0;
+        right:-280px;
+        width:280px;
+        height:100vh;
+        background:#081321;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:flex-start;
+        padding:120px 40px 40px;
+        gap:22px;
+        transition:right .35s ease;
+        z-index:9999;
+
+    }
+
+    .nav-links.active{
+
+        right:0;
+    }
+
+    .mobile-button{
+
+        display:block;
+    }
+
+    .nav-links li{
+
+        width:100%;
+        margin-bottom:8px;
+    }
+
+    .nav-links a{
+
+        display:block;
+        width:100%;
+        padding:8px 0;
+        font-size:18px;
+    }
+
+}
+
+body.menu-open{
+
+    overflow:hidden;
+
+}

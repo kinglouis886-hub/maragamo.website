@@ -1,0 +1,98 @@
+/* ========================================
+   MARAGAMO Tech Solutions
+   CSS: trusted.css
+   Version: 1.0
+======================================== */
+
+
+/* ========================================
+   TRUSTED
+======================================== */
+
+.trusted{
+
+    padding:70px 0;
+    background:#071321;
+    text-align:center;
+
+}
+
+
+/* ========================================
+   SECTION TAG
+======================================== */
+
+.section-tag{
+
+    display:inline-block;
+    color:var(--gold);
+    font-size:14px;
+    letter-spacing:3px;
+    margin-bottom:45px;
+
+}
+
+
+/* ========================================
+   TRUSTED LOGOS
+======================================== */
+
+.trusted-logos{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+
+}
+
+
+/* ========================================
+   TRUSTED ITEM
+======================================== */
+
+.trusted-item{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:#cfd8e3;
+    opacity:.75;
+    transition:.3s;
+
+}
+
+.trusted-item:hover{
+
+    opacity:1;
+    transform:translateY(-4px);
+
+}
+
+
+/* ========================================
+   TRUSTED ICON
+======================================== */
+
+.trusted-item img{
+
+    width:28px;
+
+}
+
+.trusted-item i{
+
+    font-size:34px;
+    color:var(--gold);
+    margin-right:12px;
+    transition:.3s;
+
+}
+
+.trusted-item:hover i{
+
+    transform:translateY(-6px);
+    color:var(--white);
+
+}

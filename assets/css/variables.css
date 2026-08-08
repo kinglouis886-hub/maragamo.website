@@ -1,0 +1,67 @@
+/* ========================================
+   MARAGAMO Tech Solutions
+   CSS: variable.css
+   Version 1.1
+======================================== */
+
+/* ========================================
+   RESET & GLOBAL
+======================================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* ========================================
+   ROOT COLORS
+======================================== */
+:root{
+
+   /* Brand Colors */
+    --navy:#081321;
+    --navy-light:#10233d;
+    --gold:#d4af37;
+    --blue:#1d7df2;
+    --white:#ffffff;
+
+    /* Text Colors */
+    --text-light:#ffffff;
+    --text-muted:#c8c8c8;
+
+    /* Background Colors */
+    --bg-primary:#061220;
+    --bg-secondary:#081321;
+
+    /* Layout */
+    --container-width:1200px;
+
+    /* Border Radius */
+    --radius:12px;
+
+    /* Transition */
+    --transition:0.3s ease;
+
+}
+/* ========================================
+   BODY
+======================================== */
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:var(--bg-primary);
+    color:var(--text-light);
+    overflow-x:hidden;
+
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container{
+
+    width:90%;
+    max-width:var(--container-width);
+    margin:auto;
+
+}

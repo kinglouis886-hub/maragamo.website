@@ -1,0 +1,148 @@
+/* ========================================
+   MARAGAMO Tech Solutions
+   CSS: animations.css
+   Version: 1.0
+======================================== */
+
+
+/* ========================================
+   FADE IN
+======================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+.fade-in{
+
+    animation:fadeIn .8s ease forwards;
+
+}
+
+
+/* ========================================
+   SLIDE UP
+======================================== */
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.slide-up{
+
+    animation:slideUp .8s ease forwards;
+
+}
+
+
+/* ========================================
+   ZOOM IN
+======================================== */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.9);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+.zoom-in{
+
+    animation:zoomIn .7s ease forwards;
+
+}
+
+
+/* ========================================
+   FLOAT
+======================================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.floating{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+
+/* ========================================
+   BUTTON HOVER
+======================================== */
+
+.btn-primary,
+.btn-outline{
+
+    transition:all .35s ease;
+
+}
+
+
+/* ========================================
+   IMAGE HOVER
+======================================== */
+
+.project-card img{
+
+    transition:transform .35s ease;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.05);
+
+}

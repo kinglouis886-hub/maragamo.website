@@ -1,0 +1,167 @@
+/* ========================================
+   MARAGAMO Tech Solutions
+   CSS: service.css
+   Version: 1.0
+======================================== */
+/* ========================================
+   MARAGAMO Tech Solutions
+   CSS: services.css
+   Version: 1.0
+======================================== */
+
+/*==========================================
+SERVICES
+==========================================*/
+
+.services{
+
+    padding:110px 0;
+
+    background:#081321;
+
+}
+
+.services .section-title{
+
+    max-width:900px;
+
+    margin:20px auto;
+
+    text-align:center;
+
+    font-size:64px;
+
+    line-height:1.2;
+
+}
+.services .section-tag{
+
+    display:block;
+
+    text-align:center;
+
+    color:var(--gold);
+
+    letter-spacing:4px;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+.section-description{
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#b7c2cf;
+
+    line-height:1.8;
+
+    margin-bottom:70px;
+
+}
+
+.service-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:#0d1d31;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:rgba(212,175,55,.4);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.30);
+
+}
+
+.service-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0 auto 30px;
+
+    background:rgba(212,175,55,.08);
+
+    border:2px solid rgba(212,175,55,.20);
+
+}
+.service-icon i{
+
+    font-size:34px;
+
+    color:var(--gold);
+
+}
+
+.service-card:hover .service-icon{
+
+    transform:rotate(8deg) scale(1.08);
+
+    background:var(--gold);
+
+}
+
+.service-card:hover .service-icon i{
+
+    color:#081321;
+
+}
+
+.service-link{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    color:var(--gold);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.service-link{
+
+    margin-top:auto;
+
+    padding-top:30px;
+
+}
